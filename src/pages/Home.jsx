@@ -9,7 +9,7 @@ import { serverRoute } from "../constant/constants";
 export default function Home() {
   const [listOfProducts, setListOfProducts] = useState([]);
   const [hasNextPage, setHasNextPage] = useState(true);
-  const [productLoading, setProductLoading] = useState(true);
+  const [isProductsLoading, setIsProductsLoading] = useState(true);
   const [requestedPage, setRequestedPage] = useState(1);
 
   const getProducts = async () => {
@@ -24,7 +24,7 @@ export default function Home() {
 
       setHasNextPage(productsResponse.data.data.pagination.nextPage);
       setRequestedPage(requestedPage + 1);
-      setProductLoading(false);
+      setIsProductsLoading(false);
     } catch (error) {
       console.log("some thing went wrong ", error);
     }
@@ -33,7 +33,7 @@ export default function Home() {
     document.title = "Products";
     getProducts();
   }, []);
-  if (productLoading.isInitialLoading) {
+  if (isProductsLoading) {
     return (
       <div className="flex justify-center">
         <Loader />
