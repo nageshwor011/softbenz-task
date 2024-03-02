@@ -14,7 +14,6 @@ export default function Home() {
 
   const getProducts = async () => {
     try {
-      // setProductLoading((prev) => ({ ...prev, isLoadMoreLoading: true }));
       const latestProduct = `${serverRoute.LATEST}?page=${requestedPage}`;
       const productsResponse = await backend.get(latestProduct);
 
@@ -26,12 +25,12 @@ export default function Home() {
       setHasNextPage(productsResponse.data.data.pagination.nextPage);
       setRequestedPage(requestedPage + 1);
       setProductLoading(false);
-      // setProductLoading({ isInitialLoading: false, isLoadMoreLoading: false });
     } catch (error) {
       console.log("some thing went wrong ", error);
     }
   };
   useEffect(() => {
+    document.title = "Products";
     getProducts();
   }, []);
   if (productLoading.isInitialLoading) {

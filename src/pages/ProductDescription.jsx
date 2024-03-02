@@ -20,6 +20,8 @@ export default function ProductDescription() {
     }
   };
   useEffect(() => {
+    document.title = "Description";
+
     getProductDescriptionBySlug();
   }, []);
   if (!product) {
