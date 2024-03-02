@@ -1,9 +1,11 @@
-# React + Vite
+# Softbenz task
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project include two pages that are home and product-detail page. Home page include list of products and detail page contain detail description of product like title, price, description and images.
 
-Currently, two official plugins are available:
+## To run this project in your machine follow the command.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# softbenz-task
+### step 1: git clone the url
+
+### step 2: download the node module by typing command yarn
+
+### step 3: yarn dev
