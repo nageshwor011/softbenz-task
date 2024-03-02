@@ -6,6 +6,6 @@ This project include two pages that are home and product-detail page. Home page 
 
 ### step 1: git clone the url
 
-### step 2: download the node module by typing command yarn
+### step 2: download the node module by typing command **yarn**
 
 ### step 3: yarn dev
