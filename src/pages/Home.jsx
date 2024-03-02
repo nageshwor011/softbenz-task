@@ -8,7 +8,7 @@ import { serverRoute } from "../constant/constants";
 
 export default function Home() {
   const [listOfProducts, setListOfProducts] = useState([]);
-  const [hasNextPage, setHasNextPage] = useState(false);
+  const [hasNextPage, setHasNextPage] = useState(true);
   const [productLoading, setProductLoading] = useState(true);
   const [requestedPage, setRequestedPage] = useState(1);
 
