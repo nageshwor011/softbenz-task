@@ -26,7 +26,7 @@ export default function ProductCard({ product }) {
               Rs.<span>{price}</span>
             </span>
             <Link
-              to=""
+              to={`/products/${slug}`}
               className="flex py-1.5 px-3 justify-center items-center me-1 mb-2 text-sm font-medium rounded-lg outline-white ring-orange-500 border-orange-500 border bg-orange-500 hover:bg-orange-600 text-white"
             >
               <GoEye className="me-1 text-md mt-[2px]" />
